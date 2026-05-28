@@ -1,7 +1,7 @@
 # import sys
 # from src.api import HHApi
-from src.db_manager import DBManager
 from src.data_loader import DataLoader
+from src.db_manager import DBManager
 
 
 def main() -> None:
