@@ -1,5 +1,5 @@
-import sys
-from src.api import HHApi
+# import sys
+# from src.api import HHApi
 from src.db_manager import DBManager
 from src.data_loader import DataLoader
 
@@ -105,7 +105,7 @@ def main() -> None:
 
             elif choice == "4":
                 vacancies = db_manager.get_vacancies_with_higher_salary()
-                print(f"\nВакансии с зарплатой выше среднего уровня:")
+                print("\nВакансии с зарплатой выше среднего уровня:")
                 if not vacancies:
                     print("  Нет вакансий с зарплатой выше средней")
                 for i, v in enumerate(vacancies, 1):
@@ -135,6 +135,7 @@ def main() -> None:
         if db_manager:
             db_manager.close()
             print("\nСоединение с базой данных закрыто")
+
 
 if __name__ == "__main__":
     main()
